@@ -46,6 +46,7 @@
 		C6378468278BADFF00B2D402 /* MisoWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherUITests.swift; sourceTree = "<group>"; };
 		C637846A278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C6378480278BB69100B2D402 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C6604E3227940CAC00684E1F /* Convention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Convention.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C6378480278BB69100B2D402 /* .swiftlint.yml */,
+				C6604E3127940C7F00684E1F /* Docs */,
 				C637844C278BADFE00B2D402 /* MisoWeather */,
 				C637845D278BADFF00B2D402 /* MisoWeatherTests */,
 				C6378467278BADFF00B2D402 /* MisoWeatherUITests */,
@@ -192,6 +194,14 @@
 				C6378451278BADFF00B2D402 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C6604E3127940C7F00684E1F /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				C6604E3227940CAC00684E1F /* Convention.md */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
