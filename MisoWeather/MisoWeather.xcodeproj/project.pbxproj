@@ -14,6 +14,7 @@
 		C637845F278BADFF00B2D402 /* MisoWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637845E278BADFF00B2D402 /* MisoWeatherTests.swift */; };
 		C6378469278BADFF00B2D402 /* MisoWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6378468278BADFF00B2D402 /* MisoWeatherUITests.swift */; };
 		C637846B278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637846A278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift */; };
+		C6378481278BB69100B2D402 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6378480278BB69100B2D402 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C6378464278BADFF00B2D402 /* MisoWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MisoWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6378468278BADFF00B2D402 /* MisoWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherUITests.swift; sourceTree = "<group>"; };
 		C637846A278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C6378480278BB69100B2D402 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		C6378441278BADFE00B2D402 = {
 			isa = PBXGroup;
 			children = (
+				C6378480278BB69100B2D402 /* .swiftlint.yml */,
 				C637844C278BADFE00B2D402 /* MisoWeather */,
 				C637845D278BADFF00B2D402 /* MisoWeatherTests */,
 				C6378467278BADFF00B2D402 /* MisoWeatherUITests */,
@@ -198,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C637846E278BADFF00B2D402 /* Build configuration list for PBXNativeTarget "MisoWeather" */;
 			buildPhases = (
+				C637847F278BB61F00B2D402 /* Run SwiftLint */,
 				C6378446278BADFE00B2D402 /* Sources */,
 				C6378447278BADFE00B2D402 /* Frameworks */,
 				C6378448278BADFE00B2D402 /* Resources */,
@@ -295,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6378481278BB69100B2D402 /* .swiftlint.yml in Resources */,
 				C6378455278BADFF00B2D402 /* Preview Assets.xcassets in Resources */,
 				C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */,
 			);
@@ -315,6 +320,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C637847F278BB61F00B2D402 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mint run swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6378446278BADFE00B2D402 /* Sources */ = {
