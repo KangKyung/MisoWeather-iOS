@@ -10,6 +10,11 @@
 		C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74427B873E200C3BED5 /* OnboardingView.swift */; };
 		C634C74727B8804400C3BED5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74627B8804400C3BED5 /* Image.swift */; };
 		C634C74B27B8834B00C3BED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74A27B8834B00C3BED5 /* Color.swift */; };
+		C634C75227B887DC00C3BED5 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C74D27B887DB00C3BED5 /* SpoqaHanSansNeo-Medium.ttf */; };
+		C634C75327B887DC00C3BED5 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C74E27B887DB00C3BED5 /* SpoqaHanSansNeo-Bold.ttf */; };
+		C634C75427B887DC00C3BED5 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C74F27B887DC00C3BED5 /* SpoqaHanSansNeo-Regular.ttf */; };
+		C634C75527B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C75027B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf */; };
+		C634C75627B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */; };
 		C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */; };
 		C6378450278BADFE00B2D402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844F278BADFE00B2D402 /* ContentView.swift */; };
 		C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6378451278BADFF00B2D402 /* Assets.xcassets */; };
@@ -43,6 +48,11 @@
 		C634C74427B873E200C3BED5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C634C74627B8804400C3BED5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		C634C74A27B8834B00C3BED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C634C74D27B887DB00C3BED5 /* SpoqaHanSansNeo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Medium.ttf"; sourceTree = "<group>"; };
+		C634C74E27B887DB00C3BED5 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
+		C634C74F27B887DC00C3BED5 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
+		C634C75027B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.ttf"; sourceTree = "<group>"; };
+		C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
 		C637844A278BADFE00B2D402 /* MisoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherApp.swift; sourceTree = "<group>"; };
 		C637844F278BADFE00B2D402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +109,18 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		C634C74C27B8879A00C3BED5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C634C74E27B887DB00C3BED5 /* SpoqaHanSansNeo-Bold.ttf */,
+				C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */,
+				C634C74D27B887DB00C3BED5 /* SpoqaHanSansNeo-Medium.ttf */,
+				C634C74F27B887DC00C3BED5 /* SpoqaHanSansNeo-Regular.ttf */,
+				C634C75027B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C6378441278BADFE00B2D402 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +148,7 @@
 			children = (
 				C634C74127B7641E00C3BED5 /* Info.plist */,
 				C637847E278BB07900B2D402 /* Assets */,
+				C634C74C27B8879A00C3BED5 /* Fonts */,
 				C637847D278BB01000B2D402 /* Extension */,
 				C637847C278BAFFD00B2D402 /* Error */,
 				C637847B278BAFF300B2D402 /* CoreGraphics */,
@@ -342,8 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6378481278BB69100B2D402 /* .swiftlint.yml in Resources */,
+				C634C75427B887DC00C3BED5 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				C6604E35279419D900684E1F /* Color.xcassets in Resources */,
 				C6378455278BADFF00B2D402 /* Preview Assets.xcassets in Resources */,
+				C634C75227B887DC00C3BED5 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
+				C634C75327B887DC00C3BED5 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
+				C634C75527B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf in Resources */,
+				C634C75627B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf in Resources */,
 				C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
