@@ -29,6 +29,10 @@
 		C6604E35279419D900684E1F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6604E34279419D900684E1F /* Color.xcassets */; };
 		C6B3437A27B94845000F34D0 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3437927B94845000F34D0 /* SignInWithAppleButton.swift */; };
 		C6B3437C27B9488F000F34D0 /* SignInWithAppleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3437B27B9488F000F34D0 /* SignInWithAppleDelegate.swift */; };
+		C6B3437F27B95051000F34D0 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3437E27B95051000F34D0 /* KakaoSDKAuth */; };
+		C6B3438127B95051000F34D0 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3438027B95051000F34D0 /* KakaoSDKCommon */; };
+		C6B3438327B95051000F34D0 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3438227B95051000F34D0 /* KakaoSDKUser */; };
+		C6B3438527B95A09000F34D0 /* SignInWithKakaoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,7 @@
 		C6B3437727B9396B000F34D0 /* MisoWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MisoWeather.entitlements; sourceTree = "<group>"; };
 		C6B3437927B94845000F34D0 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
 		C6B3437B27B9488F000F34D0 /* SignInWithAppleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegate.swift; sourceTree = "<group>"; };
+		C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithKakaoButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B3438127B95051000F34D0 /* KakaoSDKCommon in Frameworks */,
+				C6B3437F27B95051000F34D0 /* KakaoSDKAuth in Frameworks */,
+				C6B3438327B95051000F34D0 /* KakaoSDKUser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +144,7 @@
 		C634C75927B8C11D00C3BED5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C6B3437827B94833000F34D0 /* SignInWithAppleButton */,
+				C6B3438627B96110000F34D0 /* SignInButton */,
 				C634C75A27B8C13300C3BED5 /* SlideView.swift */,
 			);
 			path = Utils;
@@ -292,6 +300,15 @@
 			path = SignInWithAppleButton;
 			sourceTree = "<group>";
 		};
+		C6B3438627B96110000F34D0 /* SignInButton */ = {
+			isa = PBXGroup;
+			children = (
+				C6B3437827B94833000F34D0 /* SignInWithAppleButton */,
+				C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */,
+			);
+			path = SignInButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +326,11 @@
 			dependencies = (
 			);
 			name = MisoWeather;
+			packageProductDependencies = (
+				C6B3437E27B95051000F34D0 /* KakaoSDKAuth */,
+				C6B3438027B95051000F34D0 /* KakaoSDKCommon */,
+				C6B3438227B95051000F34D0 /* KakaoSDKUser */,
+			);
 			productName = MisoWeather;
 			productReference = C637844A278BADFE00B2D402 /* MisoWeather.app */;
 			productType = "com.apple.product-type.application";
@@ -381,6 +403,9 @@
 				Base,
 			);
 			mainGroup = C6378441278BADFE00B2D402;
+			packageReferences = (
+				C6B3437D27B95051000F34D0 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
 			productRefGroup = C637844B278BADFE00B2D402 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -454,6 +479,7 @@
 				C634C75827B8AC4600C3BED5 /* OnboardingSlideType.swift in Sources */,
 				C6B3437C27B9488F000F34D0 /* SignInWithAppleDelegate.swift in Sources */,
 				C634C75B27B8C13300C3BED5 /* SlideView.swift in Sources */,
+				C6B3438527B95A09000F34D0 /* SignInWithKakaoButtonView.swift in Sources */,
 				C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */,
 				C634C74727B8804400C3BED5 /* Image.swift in Sources */,
 				C6378450278BADFE00B2D402 /* ContentView.swift in Sources */,
@@ -807,6 +833,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6B3437D27B95051000F34D0 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6B3437E27B95051000F34D0 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B3437D27B95051000F34D0 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		C6B3438027B95051000F34D0 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B3437D27B95051000F34D0 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		C6B3438227B95051000F34D0 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6B3437D27B95051000F34D0 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6378442278BADFE00B2D402 /* Project object */;
 }

@@ -10,4 +10,5 @@ import SwiftUI
 extension Color {
     
     static let accent: Color = Color("accent")
+    static let kakaoYellow: Color = Color("kakaoYellow")
 }
