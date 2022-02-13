@@ -34,7 +34,7 @@ struct OnboardingView: View {
                 .padding(.bottom, 70)
             
             self.loginButtonListView
-                .padding(.leading, 28)
+                .padding(.horizontal, 28)
         }
     }
     
@@ -81,7 +81,9 @@ struct OnboardingView: View {
     }
     private var loginButtonListView: some View {
         VStack {
-            
+            // TODO: Capability 추가
+            // 애플 개발자등록 계정으로 변경 후, Sign in with Apple 항목 추가요망
+            SignInWithAppleButtonView()
         }
     }
 }
