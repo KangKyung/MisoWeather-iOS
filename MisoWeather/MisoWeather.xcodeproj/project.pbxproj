@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74427B873E200C3BED5 /* OnboardingView.swift */; };
+		C634C74727B8804400C3BED5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74627B8804400C3BED5 /* Image.swift */; };
+		C634C74B27B8834B00C3BED5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C74A27B8834B00C3BED5 /* Color.swift */; };
 		C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */; };
 		C6378450278BADFE00B2D402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844F278BADFE00B2D402 /* ContentView.swift */; };
 		C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6378451278BADFF00B2D402 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		C634C74127B7641E00C3BED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C634C74427B873E200C3BED5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C634C74627B8804400C3BED5 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C634C74A27B8834B00C3BED5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C637844A278BADFE00B2D402 /* MisoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherApp.swift; sourceTree = "<group>"; };
 		C637844F278BADFE00B2D402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C634C74827B881D800C3BED5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C634C74427B873E200C3BED5 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C634C74927B881EC00C3BED5 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		C6378441278BADFE00B2D402 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +168,7 @@
 			children = (
 				C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */,
 				C637844F278BADFE00B2D402 /* ContentView.swift */,
+				C634C74827B881D800C3BED5 /* Onboarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +183,7 @@
 		C6378479278BAE6F00B2D402 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C634C74927B881EC00C3BED5 /* Onboarding */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +212,8 @@
 		C637847D278BB01000B2D402 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C634C74627B8804400C3BED5 /* Image.swift */,
+				C634C74A27B8834B00C3BED5 /* Color.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -365,7 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */,
+				C634C74727B8804400C3BED5 /* Image.swift in Sources */,
 				C6378450278BADFE00B2D402 /* ContentView.swift in Sources */,
+				C634C74B27B8834B00C3BED5 /* Color.swift in Sources */,
 				C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

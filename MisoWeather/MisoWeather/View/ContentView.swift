@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+        
+    private var isItFirstTime: Bool {
+        true
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            if self.isItFirstTime {
+                OnboardingView()
+            }
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }
