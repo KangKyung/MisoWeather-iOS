@@ -16,6 +16,7 @@
 		C634C75527B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C75027B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf */; };
 		C634C75627B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */; };
 		C634C75827B8AC4600C3BED5 /* OnboardingSlideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C75727B8AC4600C3BED5 /* OnboardingSlideType.swift */; };
+		C634C75B27B8C13300C3BED5 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C75A27B8C13300C3BED5 /* SlideView.swift */; };
 		C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */; };
 		C6378450278BADFE00B2D402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844F278BADFE00B2D402 /* ContentView.swift */; };
 		C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6378451278BADFF00B2D402 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		C634C75027B887DC00C3BED5 /* SpoqaHanSansNeo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Thin.ttf"; sourceTree = "<group>"; };
 		C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
 		C634C75727B8AC4600C3BED5 /* OnboardingSlideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideType.swift; sourceTree = "<group>"; };
+		C634C75A27B8C13300C3BED5 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		C637844A278BADFE00B2D402 /* MisoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherApp.swift; sourceTree = "<group>"; };
 		C637844F278BADFE00B2D402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		C634C75927B8C11D00C3BED5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C634C75A27B8C13300C3BED5 /* SlideView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		C6378441278BADFE00B2D402 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 				C637847C278BAFFD00B2D402 /* Error */,
 				C637847B278BAFF300B2D402 /* CoreGraphics */,
 				C637847A278BAFE800B2D402 /* Constants */,
+				C634C75927B8C11D00C3BED5 /* Utils */,
 				C6378479278BAE6F00B2D402 /* Model */,
 				C6378478278BAE6200B2D402 /* ViewModel */,
 				C6378477278BAE5A00B2D402 /* View */,
@@ -422,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C634C75827B8AC4600C3BED5 /* OnboardingSlideType.swift in Sources */,
+				C634C75B27B8C13300C3BED5 /* SlideView.swift in Sources */,
 				C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */,
 				C634C74727B8804400C3BED5 /* Image.swift in Sources */,
 				C6378450278BADFE00B2D402 /* ContentView.swift in Sources */,

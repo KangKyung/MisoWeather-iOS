@@ -12,8 +12,10 @@ struct OnboardingView: View {
     @State private var currentOnboardingIndex: Int = 0
     private let onboardingDatas: [OnboardingSlideType] = OnboardingSlideType.allCases
     
+    // MARK: View
+    
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Color.accent
                 .ignoresSafeArea(.all)
             
@@ -25,7 +27,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading) {
             Image.logo
                 .padding(.leading, 43)
-                .padding(.top, 88)
+                .padding(.top, 48)
                 .padding(.bottom, 50)
             
             self.slideListView
@@ -35,10 +37,19 @@ struct OnboardingView: View {
                 .padding(.leading, 28)
         }
     }
+    
     private var slideListView: some View {
-        VStack {
-            self.onboardingGuideView(of: onboardingDatas[0])
-            .padding(.bottom, 20)
+        VStack(spacing: 0) {
+            SlideView(
+                spacing: 16,
+                trailingSpace: 32,
+                index: self.$currentOnboardingIndex,
+                items: self.onboardingDatas,
+                itemLimit: self.onboardingDatas.count
+            ) { onboardingData in
+                self.onboardingGuideView(of: onboardingData)
+            }
+            .padding(.bottom, 10)
             
             self.dotsOfIndexingView
         }
@@ -48,14 +59,14 @@ struct OnboardingView: View {
             Text(data.titleString)
                 .foregroundColor(.white)
                 .font(.custom("SpoqaHanSansNeo-Bold", size: 36))
+                .padding(.horizontal, 27)
                 .padding(.bottom, 10)
-                .padding(.leading, 27)
             
             Text(data.subTitleString)
                 .foregroundColor(.white)
                 .font(.custom("SpoqaHanSansNeo-Regular", size: 20))
+                .padding(.horizontal, 27)
                 .padding(.bottom, 15)
-                .padding(.leading, 27)
             
             Image(data.imageString)
         }
