@@ -39,10 +39,6 @@ struct SignInWithAppleButtonView: View {
         .frame(height: 48)
         .background(Color.white)
         .cornerRadius(12)
-        .overlay(
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(.black, lineWidth: 1)
-        )
     }
     
     private func showAppleLoginUI() {

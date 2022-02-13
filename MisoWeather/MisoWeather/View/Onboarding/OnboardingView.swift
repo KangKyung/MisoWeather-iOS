@@ -81,11 +81,11 @@ struct OnboardingView: View {
     }
     private var loginButtonListView: some View {
         VStack(spacing: 10) {
+            SignInWithKakaoButtonView()
+            
             // TODO: Capability 추가
             // 애플 개발자등록 계정으로 변경 후, Sign in with Apple 항목 추가요망
             SignInWithAppleButtonView()
-            
-            SignInWithKakaoButtonView()
         }
     }
 }
