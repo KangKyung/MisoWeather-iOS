@@ -17,7 +17,6 @@
 		C634C75627B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */; };
 		C634C75827B8AC4600C3BED5 /* OnboardingSlideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C75727B8AC4600C3BED5 /* OnboardingSlideType.swift */; };
 		C634C75B27B8C13300C3BED5 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C75A27B8C13300C3BED5 /* SlideView.swift */; };
-		C634C75D27B8E59600C3BED5 /* SignInWithAppleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C634C75C27B8E59600C3BED5 /* SignInWithAppleButtonView.swift */; };
 		C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */; };
 		C6378450278BADFE00B2D402 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637844F278BADFE00B2D402 /* ContentView.swift */; };
 		C6378452278BADFF00B2D402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6378451278BADFF00B2D402 /* Assets.xcassets */; };
@@ -27,12 +26,12 @@
 		C637846B278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C637846A278BADFF00B2D402 /* MisoWeatherUITestsLaunchTests.swift */; };
 		C6378481278BB69100B2D402 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6378480278BB69100B2D402 /* .swiftlint.yml */; };
 		C6604E35279419D900684E1F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6604E34279419D900684E1F /* Color.xcassets */; };
+		C6A7475327B9CF7F005483D4 /* SignInButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A7475227B9CF7F005483D4 /* SignInButtonType.swift */; };
 		C6B3437A27B94845000F34D0 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3437927B94845000F34D0 /* SignInWithAppleButton.swift */; };
 		C6B3437C27B9488F000F34D0 /* SignInWithAppleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3437B27B9488F000F34D0 /* SignInWithAppleDelegate.swift */; };
 		C6B3437F27B95051000F34D0 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3437E27B95051000F34D0 /* KakaoSDKAuth */; };
 		C6B3438127B95051000F34D0 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3438027B95051000F34D0 /* KakaoSDKCommon */; };
 		C6B3438327B95051000F34D0 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = C6B3438227B95051000F34D0 /* KakaoSDKUser */; };
-		C6B3438527B95A09000F34D0 /* SignInWithKakaoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		C634C75127B887DC00C3BED5 /* SpoqaHanSansNeo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Light.ttf"; sourceTree = "<group>"; };
 		C634C75727B8AC4600C3BED5 /* OnboardingSlideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideType.swift; sourceTree = "<group>"; };
 		C634C75A27B8C13300C3BED5 /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
-		C634C75C27B8E59600C3BED5 /* SignInWithAppleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonView.swift; sourceTree = "<group>"; };
 		C637844A278BADFE00B2D402 /* MisoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MisoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C637844D278BADFE00B2D402 /* MisoWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MisoWeatherApp.swift; sourceTree = "<group>"; };
 		C637844F278BADFE00B2D402 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,10 +77,10 @@
 		C6604E3227940CAC00684E1F /* Convention.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Convention.md; sourceTree = "<group>"; };
 		C6604E332794132100684E1F /* CommitRule.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CommitRule.md; sourceTree = "<group>"; };
 		C6604E34279419D900684E1F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		C6A7475227B9CF7F005483D4 /* SignInButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInButtonType.swift; sourceTree = "<group>"; };
 		C6B3437727B9396B000F34D0 /* MisoWeather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MisoWeather.entitlements; sourceTree = "<group>"; };
 		C6B3437927B94845000F34D0 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
 		C6B3437B27B9488F000F34D0 /* SignInWithAppleDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegate.swift; sourceTree = "<group>"; };
-		C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithKakaoButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,21 +288,20 @@
 			path = Docs;
 			sourceTree = "<group>";
 		};
-		C6B3437827B94833000F34D0 /* SignInWithAppleButton */ = {
+		C6B3437827B94833000F34D0 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				C634C75C27B8E59600C3BED5 /* SignInWithAppleButtonView.swift */,
 				C6B3437927B94845000F34D0 /* SignInWithAppleButton.swift */,
 				C6B3437B27B9488F000F34D0 /* SignInWithAppleDelegate.swift */,
 			);
-			path = SignInWithAppleButton;
+			path = Apple;
 			sourceTree = "<group>";
 		};
 		C6B3438627B96110000F34D0 /* SignInButton */ = {
 			isa = PBXGroup;
 			children = (
-				C6B3437827B94833000F34D0 /* SignInWithAppleButton */,
-				C6B3438427B95A09000F34D0 /* SignInWithKakaoButtonView.swift */,
+				C6B3437827B94833000F34D0 /* Apple */,
+				C6A7475227B9CF7F005483D4 /* SignInButtonType.swift */,
 			);
 			path = SignInButton;
 			sourceTree = "<group>";
@@ -479,14 +476,13 @@
 				C634C75827B8AC4600C3BED5 /* OnboardingSlideType.swift in Sources */,
 				C6B3437C27B9488F000F34D0 /* SignInWithAppleDelegate.swift in Sources */,
 				C634C75B27B8C13300C3BED5 /* SlideView.swift in Sources */,
-				C6B3438527B95A09000F34D0 /* SignInWithKakaoButtonView.swift in Sources */,
 				C634C74527B873E200C3BED5 /* OnboardingView.swift in Sources */,
 				C634C74727B8804400C3BED5 /* Image.swift in Sources */,
 				C6378450278BADFE00B2D402 /* ContentView.swift in Sources */,
 				C634C74B27B8834B00C3BED5 /* Color.swift in Sources */,
 				C637844E278BADFE00B2D402 /* MisoWeatherApp.swift in Sources */,
 				C6B3437A27B94845000F34D0 /* SignInWithAppleButton.swift in Sources */,
-				C634C75D27B8E59600C3BED5 /* SignInWithAppleButtonView.swift in Sources */,
+				C6A7475327B9CF7F005483D4 /* SignInButtonType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

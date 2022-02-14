@@ -81,11 +81,36 @@ struct OnboardingView: View {
     }
     private var loginButtonListView: some View {
         VStack(spacing: 10) {
-            SignInWithKakaoButtonView()
+            self.signInButton(with: .kakao)
             
             // TODO: Capability 추가
             // 애플 개발자등록 계정으로 변경 후, Sign in with Apple 항목 추가요망
-            SignInWithAppleButtonView()
+            self.signInButton(with: .apple)
+        }
+    }
+    private func signInButton(with button: SignInButtonType) -> some View {
+        // FIXME: 리젝 후 수정요망
+        // 애플로그인 UI리젝시 변경요망
+//        SignInWithAppleButton()
+        ZStack {
+            Text(button.textString)
+                .font(.system(size: 16, weight: .bold, design: .default))
+            
+            HStack {
+                button.logo
+                
+                Spacer()
+            }
+        }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 15)
+        .frame(height: 48)
+        .background(button.backgroundColor)
+        .cornerRadius(12)
+        .onTapGesture {
+            button.showLoginUI { isSuccess, resultString in
+                isSuccess ? print("TokenString: \(resultString)") : print("error: \(resultString)")
+            }
         }
     }
 }
