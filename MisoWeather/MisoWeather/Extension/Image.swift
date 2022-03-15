@@ -8,9 +8,9 @@
 import SwiftUI
 
 extension Image {
-    
-    static let logo: Image = Image("Logo")
-    static let onboardingEllipseOutline: Image = Image("onboardingEllipseOutline")
-    static let onboardingEllipse: Image = Image("onboardingEllipse")
-    static let kakaoLogo: Image = Image("kakaoLogo")
+  
+  static let logo: Image = Image("Logo")
+  static let onboardingEllipseOutline: Image = Image("onboardingEllipseOutline")
+  static let onboardingEllipse: Image = Image("onboardingEllipse")
+  static let kakaoLogo: Image = Image("kakaoLogo")
 }
